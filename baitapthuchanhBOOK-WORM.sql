@@ -56,6 +56,17 @@ VALUES('Nguyen Van A', 'a@gmail.com', '0123456789'),
 -- Thi he quan tri CSDL se tu choi va bao loi Duplicate entry.
 -- Dieu nay dam bao du lieu ko bi trug lap va giu tinh toan ven.
 
+SELECT * FROM books
+WHERE category = 'Trinh tham'
+  AND price < 100000;
 
+SELECT * FROM customers
+WHERE email LIKE '%@gmail.com';
 
+SELECT * FROM books
+ORDER BY price DESC-- sap xep giam dan
+LIMIT 3;-- lay 3 dong dau 
+
+UPDATE books SET price = price * 0.9
+WHERE publish_year < 2020;
 
